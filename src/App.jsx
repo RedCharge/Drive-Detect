@@ -247,7 +247,7 @@ const Packages = () => {
   const data = [
     {
         title: "Standard Package",
-        price: "1100",
+        price: "1400",
         renewal: "260",
         image: IMAGES.standard,
         details: "Complete Security",
@@ -264,7 +264,7 @@ const Packages = () => {
     },
     {
       title: "Fuel Monitor",
-      price: "2800",
+      price: "3300",
       renewal: "350",
       isPopular: true,
       image: IMAGES.fuel,
@@ -282,7 +282,7 @@ const Packages = () => {
     },
     {
       title: "Magnetic Tracker",
-      price: "950",
+      price: "1250",
       renewal: "260",
       image: IMAGES.magnetic,
       details: "Wireless & Discreet",
@@ -298,7 +298,7 @@ const Packages = () => {
     },
     {
         title: "24V Heavy Duty",
-        price: "1400",
+        price: "1800",
         renewal: "260",
         image: IMAGES.truck,
         details: "Trucks & Logistics",

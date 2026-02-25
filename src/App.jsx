@@ -47,7 +47,8 @@ const IMAGES = {
   standard: "https://m.atcdn.co.uk/ect/media/w768/2060d4c496914b95a279767aa34f4937.jpg?auto=format&fit=crop&w=800&q=80",
   truck: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80",
   fuel: "https://s.alicdn.com/@sc04/kf/H89508efcf66a47b398d10ad08b94c821r/Dongfeng-8x4-20-M3-Aluminum-Alloy-Stainless-Steel-Lined-20-M3-Plastic-Tank-Truck-New-Fuel-Chemical-Liquid-Media-Transport.jpg?auto=format&fit=crop&w=800&q=80",
-  parallaxBg: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80"
+  parallaxBg: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80",
+  headerLogo: "/drive.png" // Add header logo image from drive.png
 };
 
 const GlassCard = ({ children, className = "" }) => (
@@ -72,12 +73,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="bg-blue-600 p-2 rounded-lg shadow-lg shadow-blue-500/30">
-              <MapPin className="text-white w-6 h-6" />
-            </div>
-            <span className="text-2xl font-bold text-white tracking-tighter">
-              DRIVE<span className="text-blue-500">DETECT</span>
-            </span>
+            {/* Removed logo icon and added image from drive.png */}
+            <img 
+              src={IMAGES.headerLogo} 
+              alt="DriveDetect" 
+              className="h-10 w-auto object-contain"
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
